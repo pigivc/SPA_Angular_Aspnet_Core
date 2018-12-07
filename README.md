@@ -1,8 +1,17 @@
-"# SPA_Angular_Asp.net_Core" 
-Modify appsettings.json "Conn1" connectionstring to your database connectionstring.
-Rebuild the project
-Open command prompt
-Change path to <Project Directory>\SPA-AngularJS-MVC-Core\SPA-AngularJS-MVC-Core
-Run below Update database command to create required database in your sql server : 
-dotnet ef database update
-Build and run the project.
+## I know there are lots of samples for SPA. but here I tried to keep things easy and more readable ##
+
+1. "# SPA_Angular_Asp.net_Core" 
+2. Modify appsettings.json "Conn1" connectionstring to your database connectionstring.
+3. Rebuild the project
+4. Open command prompt
+5. Change path to <Project Directory>\SPA-AngularJS-MVC-Core\SPA-AngularJS-MVC-Core
+6. Run below Update database command to create required database in your sql server : 
+7. dotnet ef database update
+8. Build and run the project.
+
+- ##Features##
+1. MultiLayer Asp.net core MVC 2.0 Application
+2. CRUD using AngularJS
+3. Using Inheritance in angularjs controllers
+
+- ####Furthur instraction comming soon####

@@ -14,4 +14,4 @@
 2. CRUD using AngularJS
 3. Using Inheritance in angularjs controllers
 
-- ####Furthur instraction comming soon####
+- ####Furthur instructions comming soon####

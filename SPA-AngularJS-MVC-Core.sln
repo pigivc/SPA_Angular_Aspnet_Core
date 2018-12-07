@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
@@ -11,6 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entiti
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{29A57E74-5C46-4D71-992F-59CB251B65D9}"
 	ProjectSection(SolutionItems) = preProject
+GCop.json = GCop.json
 		..\..\..\ef-core-migration.txt = ..\..\..\ef-core-migration.txt
 	EndProjectSection
 EndProject

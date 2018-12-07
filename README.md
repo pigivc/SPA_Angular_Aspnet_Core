@@ -10,8 +10,9 @@
 8. Build and run the project.
 
 <h2>Features<h2>
-1. MultiLayer Asp.net core MVC 2.0 Application
-2. CRUD using AngularJS
-3. Using Inheritance in angularjs controllers
+1. MultiLayer Asp.net core MVC 2.0 Application<br/>
+2. CRUD using AngularJS<br/>
+3. Using Inheritance in angularjs controllers<br/>
 
+<h2>More...<h2>
 - ####Furthur instructions comming soon####

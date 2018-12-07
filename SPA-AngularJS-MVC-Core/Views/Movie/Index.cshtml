@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "SPA";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<body data-ng-app="ApplicationModule">
+    <div>
+        <div>
+            <div>
+                <table cellpadding="5" cellspacing="6" width="100%" style="background-color:whitesmoke; border:solid 4px green;">
+                    <tr>
+                        <td style="border: solid 1px gray; width:170px; text-align:center;"><a href="showmovies"> Show All Movies </a></td>
+                        <td style="border: solid 1px gray; width:170px; text-align:center;"><a href="addmovie"> Add New Movies </a></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <div data-ng-view></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+@section scripts{
+    <script type="text/javascript" src="@Url.Content("~/lib/angular/angular.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/lib/angular/router/angular-route.min.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/lib/angular/ui-router/release/angular-ui-router.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/app/module.js")"></script>
+    <script src="~/app/services.js"></script>
+    <script src="~/app/commonController.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/app/showMoviesController.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/app/addMovieController.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/app/editMovieController.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/app/deleteMovieController.js")"></script>
+}

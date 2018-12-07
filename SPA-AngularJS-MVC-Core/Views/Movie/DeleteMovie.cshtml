@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "DeleteStudent";
+}
+
+<table><tr><td height="10px"></td></tr></table>
+
+<table cellpadding="4" cellspacing="4" width="70%" align="center" style="background-color: skyblue; border:solid 2px red; padding-top:20px;">
+    <tr><td colspan="3" style="background-color:gray; font-size:18pt; font-weight:bold; height:30px; text-align:center;">Delete Student Information</td></tr>
+    <tr>
+        <td style="text-align:right;">Id # </td>
+        <td>{{Movie.id}}  </td>
+    </tr>
+    <tr>
+
+        <td style="text-align:right;">Title # </td>
+        <td>{{Movie.title}}  </td>
+    </tr>
+    <tr>
+
+        <td style="text-align:right;">Gener # </td>
+        <td> {{Movie.gener}}  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Release Date # </td>
+        <td>{{Movie.releaseDate}}  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Thumbnail # </td>
+        <td>{{Movie.thumbnail}}  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Description # </td>
+        <td>{{Movie.description}}  </td>
+    </tr>
+    <tr>
+        @*<td style="text-align:right;">Country # </td>
+        <td>{{Movie.country}}  </td>*@
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" value="Delete" ng-click="delete()" />
+            <br />
+            <div>{{error}}</div>
+        </td>
+    </tr>
+
+</table>

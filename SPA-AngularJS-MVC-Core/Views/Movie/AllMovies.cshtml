@@ -1,0 +1,31 @@
+﻿<table><tr><td height="10px"></td></tr></table>
+<table cellpadding="4" cellspacing="4" width="90%" align="center"
+       style="background-color: skyblue; border:solid 2px red; padding-top:20px;">
+    <thead>
+        <tr style="background-color:#F5F5F5;">
+            <th>Movie ID</th>
+            <th>Title</th>
+            <th>Gener</th>
+            <th>Release Date</th>
+            <th>Thumbnail</th>
+            <th>Description</th>
+            <th></th>
+            <th colspan="2" >Operations</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="mov in Movies">
+            <td>{{mov.id}}</td>
+            <td>{{mov.title}}</td>
+            <td>{{mov.gener}}</td>
+            <td>{{mov.releaseDate}}</td>
+            <td>{{mov.thumbnail}}</td>
+            <td>{{mov.description}}</td>
+            <td></td>
+            <td><a style="cursor:pointer" ng-click="editMovie(mov.id)">Edit</a></td>
+            <td><a style="cursor:pointer" ng-click="deleteMovie(mov.id)">Delete</a></td>
+        </tr>
+    </tbody>
+</table> 
+<button value="Reload" ng-click="reload()" />

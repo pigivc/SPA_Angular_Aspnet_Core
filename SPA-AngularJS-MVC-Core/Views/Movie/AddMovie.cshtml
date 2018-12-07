@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Add New Student";
+}
+<table><tr><td height="10px"></td></tr></table>
+
+<table cellpadding="4" cellspacing="4" width="70%" align="center" style="background-color: skyblue;
+border:solid 2px red; padding-top:20px;">
+    <tr>
+        <td colspan="3" style="background-color:gray; font-size:18pt;
+font-weight:bold; height:30px; text-align:center;">
+            Add New Movie
+        </td>
+    </tr>
+    <tr>
+        @*<td style="text-align:right;">Movie ID</td>
+            <td><input type="text" ng-model="Id" />  </td>*@
+    </tr>
+    <tr>
+        <td style="text-align:right;">Title</td>
+        <td><input type="text" ng-model="Title" />  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Gener</td>
+        <td><input type="text" ng-model="Gener" />  </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:right;">Release Date</td>
+        <td><input type="text" ng-model="ReleaseDate" />  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Thumbnail</td>
+        <td><input type="text" ng-model="Thumbnail" />  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Description</td>
+        <td><textarea ng-model="Description" />  </td>
+    </tr>
+    <tr>
+        @*<td style="text-align:right;">Class</td>
+        <td><input type="text" ng-model="Class" />  </td>*@
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" value="Save" data-ng-click="save()" />
+            <br />
+            <div>{{error}}</div>
+        </td>
+    </tr>
+
+</table>

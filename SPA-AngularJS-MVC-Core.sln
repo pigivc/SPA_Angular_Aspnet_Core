@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPA-AngularJS-MVC-Core", "SPA-AngularJS-MVC-Core\SPA-AngularJS-MVC-Core.csproj", "{335F752A-DF49-49EE-9ACF-AD03EF27C7A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{E2BC4CB4-15F9-4340-9BEB-90DB8F96DAC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{21EB6AA2-1787-4D1F-A7D5-51A1D937E810}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{29A57E74-5C46-4D71-992F-59CB251B65D9}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\ef-core-migration.txt = ..\..\..\ef-core-migration.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{B47BED36-EEC5-4560-9278-5B2BA4F19A46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfRepository", "EfRepository\EfRepository.csproj", "{A73114B5-543E-4E45-85B7-D985E0D50EAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{335F752A-DF49-49EE-9ACF-AD03EF27C7A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335F752A-DF49-49EE-9ACF-AD03EF27C7A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335F752A-DF49-49EE-9ACF-AD03EF27C7A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335F752A-DF49-49EE-9ACF-AD03EF27C7A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2BC4CB4-15F9-4340-9BEB-90DB8F96DAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BC4CB4-15F9-4340-9BEB-90DB8F96DAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2BC4CB4-15F9-4340-9BEB-90DB8F96DAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2BC4CB4-15F9-4340-9BEB-90DB8F96DAC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21EB6AA2-1787-4D1F-A7D5-51A1D937E810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21EB6AA2-1787-4D1F-A7D5-51A1D937E810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21EB6AA2-1787-4D1F-A7D5-51A1D937E810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21EB6AA2-1787-4D1F-A7D5-51A1D937E810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B47BED36-EEC5-4560-9278-5B2BA4F19A46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B47BED36-EEC5-4560-9278-5B2BA4F19A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B47BED36-EEC5-4560-9278-5B2BA4F19A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B47BED36-EEC5-4560-9278-5B2BA4F19A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73114B5-543E-4E45-85B7-D985E0D50EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73114B5-543E-4E45-85B7-D985E0D50EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73114B5-543E-4E45-85B7-D985E0D50EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73114B5-543E-4E45-85B7-D985E0D50EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4BF62B8-456A-484A-83F3-D6EB5CA58F8F}
+	EndGlobalSection
+EndGlobal

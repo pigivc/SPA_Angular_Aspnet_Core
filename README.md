@@ -9,7 +9,7 @@
 7. dotnet ef database update
 8. Build and run the project.
 
-- ##Features##
+- ##<h2>Features<h2>##
 1. MultiLayer Asp.net core MVC 2.0 Application
 2. CRUD using AngularJS
 3. Using Inheritance in angularjs controllers

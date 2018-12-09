@@ -11,7 +11,7 @@
 
 <h2>Features<h2>
 
-1. MultiLayer Asp.net core MVC 2.0 Application<br/>
+1. MultiLayer Asp.net core MVC 2.0 Application (Onion Architecture)<br/>
 2. CRUD using AngularJS<br/>
 3. Using Inheritance in angularjs controllers<br/>
 

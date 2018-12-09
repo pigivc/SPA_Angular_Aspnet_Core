@@ -6,14 +6,14 @@ namespace Contracts
 {
     public interface IMovieRepo
     {
-        Movie GetMovie(int id);
+        Movie GetMovie(long id);
 
         IEnumerable<Movie> GetMovies();
 
-        int CreateMovie(Movie model);
+        long CreateMovie(Movie model);
 
         void UpdateMovie(Movie model);
 
-        void DeleteMovie(int id);
+        void DeleteMovie(long id);
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Concrete;
 using Contracts;
 using DataAccess;
 using EfRepository;
@@ -32,6 +33,7 @@ namespace SPA_AngularJS_MVC_Core
                     builder => builder.MigrationsAssembly(typeof(SpaAppContext).Assembly.FullName)));
 
             services.AddTransient(typeof(IMovieRepo), typeof(MovieRepo));
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
 
             services.AddMvc();
         }

@@ -37,6 +37,8 @@ namespace SPA_AngularJS_MVC_Core.Controllers
         [HttpPost]
         public void Post([FromBody]Movie model)
         {
+            model.AddedDate = model.ModifiedDate = DateTime.UtcNow;
+            model.IPAddress = HttpContext.Connection.RemoteIpAddress.ToString();
             _movieRepo.CreateMovie(model);
         }
 
@@ -45,7 +47,15 @@ namespace SPA_AngularJS_MVC_Core.Controllers
         public void Put(int id, [FromBody]Movie model)
         {
             model.Id = id;
-            _movieRepo.UpdateMovie(model);
+            var entity = _movieRepo.GetMovie(id);
+            entity.Thumbnail = model.Thumbnail;
+            entity.Title = model.Title;
+            entity.ReleaseDate = model.ReleaseDate;
+            entity.Description = model.Description;
+            entity.Gener = model.Gener;
+
+            entity.ModifiedDate = DateTime.UtcNow;
+            _movieRepo.UpdateMovie(entity);
         }
 
         // DELETE: api/ApiWithActions/5

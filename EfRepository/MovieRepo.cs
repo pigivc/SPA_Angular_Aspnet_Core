@@ -9,52 +9,30 @@ namespace EfRepository
 {
     public class MovieRepo : IMovieRepo
     {
-        private SpaAppContext _context;
+        private IRepository<Movie> _movieRepo;
 
-        public MovieRepo(SpaAppContext context)
+        public MovieRepo(IRepository<Movie> movieRepo)
         {
-            _context = context;
+            _movieRepo = movieRepo;
         }
 
-        //public SpaAppContext Context
-        //{
-        //    get
-        //    {
-        //        if (_context == null)
-        //            return _context = SpaAppContext.CreateContext();
-        //        else
-        //            return _context;
-        //    }
-        //}
+        public Movie GetMovie(long id) => _movieRepo.Get(id);
 
-        public Movie GetMovie(int id)
-        {
-            return _context.Movies.FirstOrDefault(p => p.Id == id);
-        }
+        public IEnumerable<Movie> GetMovies() => _movieRepo.GetAll();
 
-        public IEnumerable<Movie> GetMovies()
+        public long CreateMovie(Movie model)
         {
-            return _context.Movies.ToArray();
-        }
-
-        public int CreateMovie(Movie model)
-        {
-            _context.Movies.Add(model);
-            _context.SaveChanges();
+            _movieRepo.Insert(model);
+            _movieRepo.SaveChanges();
             return model.Id;
         }
 
         public void UpdateMovie(Movie model)
         {
-            _context.Entry<Movie>(model).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            _context.SaveChanges();
+            _movieRepo.Update(model);
         }
 
-        public void DeleteMovie(int id)
-        {
-            var movie = _context.Movies.First(p => p.Id == id);
-            _context.Movies.Remove(movie);
-            _context.SaveChanges();
-        }
+        public void DeleteMovie(long id) => _movieRepo.Delete(_movieRepo.Get(id));
+
     }
 }

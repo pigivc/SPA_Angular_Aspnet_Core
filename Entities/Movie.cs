@@ -6,11 +6,8 @@ using System.Text;
 
 namespace Entities
 {
-    public class Movie
+    public class Movie : BaseEntity
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-
         [Required]
         [MaxLength(50)]
         public string Title { get; set; }

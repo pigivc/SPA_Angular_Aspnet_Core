@@ -21,9 +21,11 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Entities.Movie", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("AddedDate");
 
                     b.Property<string>("Description")
                         .HasMaxLength(500);
@@ -31,6 +33,10 @@ namespace DataAccess.Migrations
                     b.Property<string>("Gener")
                         .IsRequired()
                         .HasMaxLength(50);
+
+                    b.Property<string>("IPAddress");
+
+                    b.Property<DateTime>("ModifiedDate");
 
                     b.Property<DateTime>("ReleaseDate");
 
